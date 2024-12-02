@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="styles5.css">
+</head>
+<body>
+    <!-- Header con el menú de navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Mi Web</a>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="acerca de.html">Acerca de</a></li>
+                <li><a href="informacion.html">Informacion</a></li>    
+                <li><a href="contaactos.html">Contacto</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+<!-- Sección de Información de Mi Equipo -->
+<section class="team-info">
+    <div class="container">
+        <h2>Conoce a Nuestro Equipo</h2>
+        <p>Estamos aquí para ayudarte. Conoce a las personas detrás de esta plataforma que está dedicada a apoyar a los estudiantes.</p>
+
+        <!-- Fila para los miembros del equipo -->
+        <div class="team-members">
+            <!-- Miembro del equipo 1 -->
+            <div class="team-member">
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462551449_1077160037489072_393569315377296256_n.jpg?stp=dst-jpg_s640x640&_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_ohc=SdAjK0sFmzcQ7kNvgHWkO1m&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QHnj2sHsaIDOiX1YtkUYBKMn2_e4S0ZMF5N_3hr-FMY1A&oe=677514FF" alt="Foto de miembro del equipo">
+                <h3>Uzi Gamaliel Hernandez Cuz</h3>
+                <p><i class="fas fa-phone-alt"></i> +52 81 1064 0863</p>
+                <p><i class="fas fa-envelope"></i> uzi.hernandez@cbtis258.edu.mx</p>
+            </div>
+
+            <!-- Miembro del equipo 2 -->
+            <div class="team-member">
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462543295_4022163978011457_3512507334926032385_n.jpg?stp=dst-jpg_s640x640&_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=A08Gsaio6hkQ7kNvgGkw6Gw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QGD0T4zZP-VHcSnp3atqN-iSILgpGcN4jfWSYAK96Ptbw&oe=676E3CC8" alt="Foto de miembro del equipo">
+                <h3>Debani Herrera Vargas</h3>
+                <p><i class="fas fa-phone-alt"></i> +52 81 3128 3243</p>
+                <p><i class="fas fa-envelope"></i> debani.herrera.alp@cbtis258.edu.mx</p>
+            </div>
+
+            <!-- Miembro del equipo 3 -->
+            <div class="team-member">
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462557305_922759829919249_4264929796136361065_n.jpg?stp=dst-jpg_s480x480&_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=dfQBRbNLvdQQ7kNvgHjbaAl&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QG0xMSKrhHsFx2shQ_Nb_LqEvg9Cnm7vUwtNo3tODculw&oe=676E2C7E" alt="Foto de miembro del equipo">
+                <h3>Joseline Scarlet Valdez Muñiz</h3>
+                <p><i class="fas fa-phone-alt"></i> +52 81 1846 0029</p>
+                <p><i class="fas fa-envelope"></i> joseline.valdez.alp@cbtis258.edu.mx</p>
+            </div>
+        </div>
+
+                <!-- Fila para los miembros del equipo -->
+                <div class="team-members">
+                    <!-- Miembro del equipo 1 -->
+                    <div class="team-member">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462587341_430833586737501_1835218224849706918_n.jpg?stp=dst-jpg_s480x480&_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_ohc=sH8xKAA6h-QQ7kNvgFORya7&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QHWHo91pk6w1q87l5GAMXohLmGDrxsJMM5q4h_sastQgg&oe=676E21CE" alt="Foto de miembro del equipo">
+                        <h3>Sergio Zayas Tlatehui</h3>
+                        <p><i class="fas fa-phone-alt"></i> +52 81 2416 6148</p>
+                        <p><i class="fas fa-envelope"></i> sergio.zayas.alp@bctis258.edu.mx</p>
+                    </div>
+        
+                    <!-- Miembro del equipo 2 -->
+                    <div class="team-member">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462572249_425472710621566_7740055348596076905_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=XtxWToxZlikQ7kNvgHy54vP&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QHJOZYs8NhSjNUX9qNHkv2fZ7RMrOySPsd7C2H9v38zVw&oe=67753DDD" alt="Foto de miembro del equipo">
+                        <h3>Samantha Jocelyn Luna Gaheta</h3>
+                        <p><i class="fas fa-phone-alt"></i> +52 81 1993 2480</p>
+                        <p><i class="fas fa-envelope"></i> shamanta.luna.alp@cbtis258.edu.mx</p>
+                    </div>
+        
+                    <!-- Miembro del equipo 3 -->
+                    <div class="team-member">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462568159_611222161448699_6839570791070132016_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=0024fc&_nc_ohc=gXSJG9HrjUsQ7kNvgENnjRm&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QFvs7Xcz_h7tsYbon-tcYrA4vjM9cdIX7KIKDIIBnqckw&oe=67753AF9" alt="Foto de miembro del equipo">
+                        <h3>Melissa</h3>
+                        <p><i class="fas fa-phone-alt"></i> +52 81 3081 9235</p>
+                        <p><i class="fas fa-envelope"></i> devanny.gomez.alp@cbtis258.edu.mx</p>
+                    </div>
+                </div>
+        
+
+        <!-- Botón para agregar miembro -->
+        <button class="add-member-btn">Agregar Miembro</button>
+    </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

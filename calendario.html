@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario Dinámico</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="calendar-container">
+        <header>
+            <button id="prev-month">◄</button>
+            <h1 id="month-year"></h1>
+            <button id="next-month">►</button>
+        </header>
+        <table id="calendar-table">
+            <thead>
+                <tr>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                    <th>Sábado</th>
+                    <th>Domingo</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div id="add-event">
+            <h2>Agregar Evento</h2>
+            <form id="event-form">
+                <input type="date" id="event-date" required>
+                <input type="text" id="event-title" placeholder="Descripción del evento" required>
+                <button type="submit">Agregar Evento</button>
+            </form>
+        </div>
+        <div id="events-list">
+            <h2>Eventos</h2>
+            <ul id="event-list"></ul>
+        </div>
+    </div>
+    <footer>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Mi Web</a>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="CALENDARIO.html">Calendario</a></li>
+                <li><a href="acerca de.html">Acerca de</a></li>
+                <li><a href="informacion.html">Informacion</a></li>    
+                <li><a href="contaactos.html">Contacto</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </footer>
+    <script src="script1.js"></script>
+</body>
+</html>

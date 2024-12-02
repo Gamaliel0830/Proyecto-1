@@ -1,0 +1,187 @@
+         /* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f1f1f1;
+    color: #333;
+    line-height: 1.6;
+}
+/*estylo menu*/
+header {
+    background-color: #a8dadc; /* Pastel azul */
+    padding: 15px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar .logo a {
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar .menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar .menu li {
+    position: relative;
+    margin-left: 20px;
+}
+
+.navbar .menu a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .menu a:hover {
+    background-color: #457b9d; /* Color pastel más oscuro */
+    border-radius: 5px;
+}
+/* Estilos para el menú hamburguesa */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px 0;
+}
+
+main {
+    /* Estilos para el contenido principal */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+
+/* Sección de Introducción */
+.intro {
+    padding: 30px 20px;
+    background-color: #e9f7e1;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Sección de Beneficios */
+.benefits {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.benefits h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.icon {
+    width: 250px;
+    padding: 20px;
+    background-color: #e1f5fe;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.icon i {
+    font-size: 40px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.icon h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.icon p {
+    font-size: 1rem;
+}
+
+/* Sección de Imágenes */
+.images {
+    padding: 40px 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.images h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-gallery img {
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Sección de Conclusión */
+.conclusion {
+    padding: 30px 20px;
+    background-color: #e9f7e1;
+    text-align: center;
+}
+
+.conclusion h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.conclusion p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

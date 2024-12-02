@@ -1,0 +1,239 @@
+/* General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc; /* Fondo suave */
+    margin: 0;
+    padding: 0;
+    color: #555;
+}
+
+/* Container del Calendario */
+.calendar-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border-top: 8px solid #ffcc99; /* Ligeramente color pastel */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #6f7d7d;
+}
+
+/* Botones de Navegación */
+button {
+    background-color: #ffe3b3; /* Color pastel */
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #ffcc99;
+}
+
+/* Título de Mes y Año */
+#month-year {
+    font-weight: bold;
+    color: #4f6d7a;
+}
+
+/* Tabla del Calendario */
+#calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+#calendar-table th, #calendar-table td {
+    width: 14%;
+    height: 70px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+    color: #777;
+}
+
+/* Cabecera de los días */
+#calendar-table th {
+    background-color: #f1f1f1;
+    color: #8d8d8d;
+    font-weight: normal;
+}
+
+/* Celdas del Calendario */
+#calendar-table td {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+/* Efecto Hover */
+#calendar-table td:hover {
+    background-color: #e2f2f8;
+    transform: scale(1.1);
+}
+
+/* Día Seleccionado */
+#calendar-table td.selected {
+    background-color: #ffebcc;
+    color: #ff6600;
+    box-shadow: 0 0 12px rgba(255, 102, 0, 0.3);
+}
+
+/* Día con Evento */
+#calendar-table td.event {
+    background-color: #ffe6f7;
+    font-weight: bold;
+}
+
+/* Día Importante */
+#calendar-table td.important {
+    background-color: #ffdfdf; /* Rosa pastel */
+    color: #ff4c4c;
+    font-weight: bold;
+}
+
+#calendar-table td.important:hover {
+    background-color: #ffc9c9;
+}
+
+/* Sección de Agregar Evento */
+#add-event {
+    margin-top: 30px;
+    background-color: #f9f0f6;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Formulario de Evento */
+#add-event input[type="date"], 
+#add-event input[type="text"] {
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 100%;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Estilo en el campo de texto cuando se está editando */
+#add-event input[type="text"].editing {
+    background-color: #e6f7ff;
+}
+
+/* Botón de Agregar/Editar Evento */
+#add-event button {
+    background-color: #ffcc99;
+    color: white;
+    padding: 14px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#add-event button:hover {
+    background-color: #ffb84d;
+}
+
+/* Lista de Eventos */
+#events-list {
+    margin-top: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    margin-bottom: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+li span {
+    color: #ff6600;
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* Icono para eventos */
+li:before {
+    content: '📅'; /* Icono de calendario */
+    margin-right: 8px;
+    font-size: 18px;
+    color: #ff6600;
+}
+/* Estilos del Modal */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+/* Día destacado al hacer hover */
+#calendar-table td:hover {
+    background-color: #ffe9b3;
+    transform: scale(1.15);
+    border: 2px solid #ffaa00;
+}
+
+/* Efecto adicional para días importantes */
+#calendar-table td.important:hover {
+    background-color: #ffd6d6;
+    border-color: #ff4c4c;
+    box-shadow: 0 0 12px rgba(255, 76, 76, 0.5);
+}
